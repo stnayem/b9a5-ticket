@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css and daisyUi  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'ticket-primary': 'rgb(29, 209, 0);',
+                        'ticket-primary-1': 'rgb(39, 174, 96)',
+                        'ticket-gray': 'rgb(247, 248, 248)',
+                        'ticket-yellow': 'rgb(255, 191, 15);',
+                        'ticket-coupon-black': 'rgba(3, 7, 18, 0.8)',
+                        'ticket-coupon-gray': 'rgba(3, 7, 18, 0.5)',
+                        'ticket-pink': 'rgb(247, 140, 156)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts: Railway and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Bus Ticket</title>
+
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="font-raleway">
+    <header>
+        <!-- nav bar -->
+
+        <!-- banner/hero section -->
+        <section class="hero lg:max-w-[1170px] mx-auto lg:min-h-[550px] lg:mb-32"
+            style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-10 lg:rounded-3xl"></div>
+            <div class="text-center">
+                <div class="max-w-2xl">
+                    <h1 class="text-white mb-5 mx-auto text-6xl font-bold">End-to-End Travel with</h1>
+                    <h1 class="text-ticket-primary mb-5 text-6xl font-bold">P Paribahan</h1>
+                    <p class="font-inter text-lg font-normal text-gray-100 mb-5">Yes, you can run unit tests and view
+                        the results directly within the
+                        app. The integrated testing features allow for a streamlined.</p>
+                    <button
+                        class="py-5 px-7 rounded-xl text-black font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">Buy
+                        Tickets</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="">
+        <!-- discount section -->
+        <section class="lg:max-w-[1170px] mx-auto">
+            <h3 class="text-center font-bold text-4xl lg:mb-12">Best offers for you</h3>
+            <div class="flex flex-col lg:space-x-4 lg:flex-row lg:max-h-56">
+                <div class="flex-1 bg-ticket-yellow flex lg:flex-row lg:rounded-2xl">
+                    <div class=" font-inter flex flex-col justify-center items-center w-[50%] my-auto">
+                        <div class="text-left">
+                            <h3 class="text-ticket-coupon-black font-black text-4xl">15% OFF</h3>
+                            <p class="text-ticket-coupon-black font-semibold text-xl">on your next purchase</p>
+                            <p class="text-ticket-coupon-gray">use by February 2024</p>
+                        </div>
+                    </div>
+                    <img class="w-[10%]" src="./images/cupon-devider.png" alt="">
+                    <div class="w-[40%] flex flex-col justify-center text-center">
+                        <h3 class="text-ticket-coupon-black font-bold text-3xl">NEW15</h3>
+                        <p class="text-ticket-coupon-gray font-medium text-xl">Coupon Code</p>
+                    </div>
+                </div>
+
+                <div class="flex-1 bg-ticket-pink flex lg:flex-row lg:rounded-2xl">
+                    <div class="font-inter flex flex-col justify-center items-center w-[50%] my-auto">
+                        <div class="text-left">
+                            <h3 class="text-ticket-coupon-black font-black text-4xl">20% OFF</h3>
+                            <p class="text-ticket-coupon-black font-semibold text-xl">on your next purchase</p>
+                            <p class="text-ticket-coupon-gray">use by February 2024</p>
+                        </div>
+                    </div>
+                    <img class="w-[10%]" src="./images/cupon-devider.png" alt="">
+                    <div class="w-[40%] flex flex-col justify-center text-center">
+                        <h3 class="text-ticket-coupon-black font-bold text-3xl">Couple 20</h3>
+                        <p class="text-ticket-coupon-gray font-medium text-xl">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center mt-16 mb-28">
+                <button class="py-5 px-7 rounded-xl text-ticket-primary border border-ticket-primary font-bold 
+                     bg-white hover:shadow-lg">See
+                    All Offers</button>
+            </div>
+        </section>
+
+        <!-- buy ticket section -->
+        <section class="bg-ticket-gray border-2 border-t-green-400 border-r-0 border-b-0 border-l-0 rounded-t-[88px]">
+            <div class="lg:max-w-[1170px] mx-auto lg:my-28">
+                <!-- buy-ticket-section: title -->
+                <div class="text-center">
+                    <h3 class="font-bold text-4xl lg:mb-6">P.H Paribahan</h3>
+                    <p
+                        class="lg:mb-12 text-ceter font-inter text-ticket-coupon-gray text-lg font-normal lg:max-w-[736px] mx-auto">
+                        Yes,
+                        you
+                        can run unit tests
+                        and view
+                        the results directly within the
+                        app. The integrated testing features allow for a streamlined.</p>
+                </div>
+
+
+                <!-- buy-ticket-section: destination & single ticket price -->
+                <div class="bg-white flex lg:flex-row lg:rounded-2xl">
+                    <!-- left part -->
+                    <div class=" font-inter flex flex-col justify-center items-center w-[70%] my-auto">
+                        <!-- 1st part: bas name and available seats -->
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <img src="./images/bus-logo.png" alt="">
+                                <div class="flex flex-col">
+                                    <h3 class="font-bold text-4xl lg:mb-6">P.H Paribahan</h3>
+                                    <p
+                                        class="lg:mb-12 text-ceter font-inter text-ticket-coupon-gray text-lg font-normal lg:max-w-[736px] mx-auto">
+                                        Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center py-5 px-7 rounded-xl text-ticket-primary border border-ticket-primary font-bold 
+                     bg-green-100 hover:shadow-lg">
+                                <img src="./images/seat-green.png" alt="">
+                                <span>40 Seats left</span>
+
+                            </div>
+                            <!-- 2ns part: destination, boarding, dropping, duration -->
+                            <div></div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- divider -->
+                    <img class="" src="./images/info-devider.png" alt="">
+
+                    <!-- right part -->
+                    <div class="w-[20%] flex flex-col justify-center items-center">
+                        <img class="w-12 h-12" src="./images/fare.png" alt="">
+                        <h3 class="text-ticket-coupon-black font-bold text-3xl">550 Taka</h3>
+                        <p class="text-ticket-coupon-gray font-medium text-xl">Per Seat</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- buy-ticket-section: select seat(s) and total price -->
+                <div></div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-black text-white py-28">
+        <div class="lg:max-w-[1170px] mx-auto">
+            <div class="flex justify-between border-b-2 border-dashed border-gray-800 pb-12">
+                <div class="flex flex-col items-start">
+                    <h3 class="text-center font-extrabold text-4xl mb-4">P-Ticket</h3>
+                    <p class="font-inter text-lg font-normal text-gray-400 max-w-80">P-Ticket is a digital platform to
+                        make your daily commuting
+                        better</p>
+                </div>
+                <div class="flex flex-col items-end">
+                    <h4 class="text-xl font-semibold text-gray-200 mb-5">Download our app</h4>
+                    <button class="flex items-center space-x-4 border-2 border-white rounded-xl py-3 px-6">
+                        <img src="./images/playstore.png" alt="">
+                        <div>
+                            <p>GET IT ON</p>
+                            <p class="font-semibold text-xl">Google Play</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between lg:flex-row  pt-8">
+                <div class="text-gray-400">@all rights reserved, P-Ticket services limited.2024</div>
+                <div class="space-x-4">
+                    <span>Terms & condition</span>
+                    <span>Return & refund policy</span>
+                    <span>Privacy policy</span>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+
+    </script>
+</body>
+
+</html>
