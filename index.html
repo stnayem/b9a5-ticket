@@ -121,7 +121,7 @@
         <!-- buy ticket section -->
         <section class="bg-ticket-gray border-2 border-t-green-400 border-r-0 border-b-0 border-l-0 rounded-t-[88px]">
             <div class="lg:max-w-[1170px] mx-auto lg:my-28">
-                <!-- buy-ticket-section: title -->
+                <!-- ✅buy-ticket-section: title -->
                 <div class="text-center">
                     <h3 class="font-bold text-4xl lg:mb-6">P.H Paribahan</h3>
                     <p
@@ -134,32 +134,44 @@
                         app. The integrated testing features allow for a streamlined.</p>
                 </div>
 
-
-                <!-- buy-ticket-section: destination & single ticket price -->
+                <!-- ✅buy-ticket-section: destination & single ticket price -->
                 <div class="bg-white flex lg:flex-row lg:rounded-2xl">
                     <!-- left part -->
-                    <div class=" font-inter flex flex-col justify-center items-center w-[70%] my-auto">
+                    <div class="flex flex-col justify-between lg:p-8 w-[70%]">
                         <!-- 1st part: bas name and available seats -->
                         <div class="flex justify-between">
-                            <div class="flex">
-                                <img src="./images/bus-logo.png" alt="">
-                                <div class="flex flex-col">
-                                    <h3 class="font-bold text-4xl lg:mb-6">P.H Paribahan</h3>
-                                    <p
-                                        class="lg:mb-12 text-ceter font-inter text-ticket-coupon-gray text-lg font-normal lg:max-w-[736px] mx-auto">
+                            <div class="flex items-center space-x-3">
+                                <img class="h-12" src="./images/bus-logo.png" alt="">
+                                <div class="flex flex-col items-start">
+                                    <h3 class="font-bold text-4xl">Greenline Paribahan</h3>
+                                    <p class="font-inter text-ticket-coupon-gray text-lg font-normal lg:max-w-[736px]">
                                         Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <div class="flex justify-center py-5 px-7 rounded-xl text-ticket-primary border border-ticket-primary font-bold 
-                     bg-green-100 hover:shadow-lg">
-                                <img src="./images/seat-green.png" alt="">
-                                <span>40 Seats left</span>
 
+                            <div class="max-h-14 flex items-center  py-5 px-7 rounded-xl text-ticket-primary border border-ticket-primary font-bold 
+                     bg-green-100">
+                                <img class="w-7 h-7 mr-1" src="./images/seat-green.png" alt="">
+                                <span id="available-seat">40</span> <span>&nbsp; Seats left</span>
                             </div>
-                            <!-- 2ns part: destination, boarding, dropping, duration -->
-                            <div></div>
                         </div>
 
+                        <!-- 2nd part: destination, boarding, dropping, duration -->
+                        <div class="flex flex-col justify-around p-8 rounded-2xl bg-ticket-gray h-64">
+                            <div class="flex justify-between">
+                                <span>Route</span>
+                                <span class="font-semibold text-lg">Dhaka - Sylhet</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Departure Time</span>
+                                <span class="font-semibold text-lg">9:00 PM</span>
+                            </div>
+                            <div class="font-inter flex justify-between *:p-4 *:bg-gray-200 *:rounded-lg">
+                                <span>Boarding Point - Laxmipur</span>
+                                <span>Dropping Point - Bogura</span>
+                                <span>Est. Time - 11 Hour</span>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -167,7 +179,7 @@
                     <img class="" src="./images/info-devider.png" alt="">
 
                     <!-- right part -->
-                    <div class="w-[20%] flex flex-col justify-center items-center">
+                    <div class=" lg:p-8 w-[20%] flex flex-col justify-center items-center">
                         <img class="w-12 h-12" src="./images/fare.png" alt="">
                         <h3 class="text-ticket-coupon-black font-bold text-3xl">550 Taka</h3>
                         <p class="text-ticket-coupon-gray font-medium text-xl">Per Seat</p>
@@ -180,11 +192,10 @@
 
 
 
-                <!-- buy-ticket-section: select seat(s) and total price -->
+                <!-- 👷⚒️buy-ticket-section: select seat(s) and total price -->
                 <div></div>
             </div>
         </section>
-
     </main>
     <footer class="bg-black text-white py-28">
         <div class="lg:max-w-[1170px] mx-auto">
