@@ -21,8 +21,8 @@
                         'ticket-gray': 'rgb(247, 248, 248)',
                         'ticket-gray-1': 'rgba(3, 7, 18, 0.5)',
                         'ticket-yellow': 'rgb(255, 191, 15);',
+                        'ticket-black': 'rgb(3, 7, 18)',
                         'ticket-coupon-black': 'rgba(3, 7, 18, 0.8)',
-                        'ticket-coupon-gray': 'rgba(3, 7, 18, 0.5)',
                         'ticket-pink': 'rgb(247, 140, 156)',
                     }
                 }
@@ -57,6 +57,43 @@
 <body class="font-raleway">
     <header>
         <!-- nav bar -->
+        <div class="navbar bg-base-100 lg:max-w-[1170px] mx-auto my-7">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+
+                    </ul>
+                </div>
+                <div class="text-4xl font-extrabold">P-Ticket</div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="max-h-14 flex items-center  py-5 px-7 rounded-xl text-ticket-primary border border-ticket-primary font-bold 
+                bg-green-100">
+                    <span>Bus &nbsp;</span>
+                    <img class="w-7 h-7 mr-1" src="./images/bus-icon.png" alt="">
+                </button>
+            </div>
+        </div>
 
         <!-- banner/hero section -->
         <section class="hero lg:max-w-[1170px] mx-auto lg:min-h-[550px] lg:mb-32"
@@ -86,13 +123,13 @@
                         <div class="text-left">
                             <h3 class="text-ticket-coupon-black font-black text-4xl">15% OFF</h3>
                             <p class="text-ticket-coupon-black font-semibold text-xl">on your next purchase</p>
-                            <p class="text-ticket-coupon-gray">use by February 2024</p>
+                            <p class="text-ticket-gray-1">use by February 2024</p>
                         </div>
                     </div>
                     <img class="w-[10%]" src="./images/cupon-devider.png" alt="">
                     <div class="w-[40%] flex flex-col justify-center text-center">
                         <h3 class="text-ticket-coupon-black font-bold text-3xl">NEW15</h3>
-                        <p class="text-ticket-coupon-gray font-medium text-xl">Coupon Code</p>
+                        <p class="text-ticket-gray-1 font-medium text-xl">Coupon Code</p>
                     </div>
                 </div>
 
@@ -101,13 +138,13 @@
                         <div class="text-left">
                             <h3 class="text-ticket-coupon-black font-black text-4xl">20% OFF</h3>
                             <p class="text-ticket-coupon-black font-semibold text-xl">on your next purchase</p>
-                            <p class="text-ticket-coupon-gray">use by February 2024</p>
+                            <p class="text-ticket-gray-1">use by February 2024</p>
                         </div>
                     </div>
                     <img class="w-[10%]" src="./images/cupon-devider.png" alt="">
                     <div class="w-[40%] flex flex-col justify-center text-center">
                         <h3 class="text-ticket-coupon-black font-bold text-3xl">Couple 20</h3>
-                        <p class="text-ticket-coupon-gray font-medium text-xl">Coupon Code</p>
+                        <p class="text-ticket-gray-1 font-medium text-xl">Coupon Code</p>
                     </div>
                 </div>
             </div>
@@ -122,11 +159,11 @@
         <!-- buy ticket section -->
         <section class="bg-ticket-gray border-2 border-t-green-400 border-r-0 border-b-0 border-l-0 rounded-t-[88px]">
             <div class="lg:max-w-[1170px] mx-auto lg:my-28">
-                <!-- ✅buy-ticket-section: title -->
+                <!-- buy-ticket-section: title -->
                 <div class="text-center">
                     <h3 class="font-bold text-4xl lg:mb-6">P.H Paribahan</h3>
                     <p
-                        class="lg:mb-12 text-ceter font-inter text-ticket-coupon-gray text-lg font-normal lg:max-w-[736px] mx-auto">
+                        class="lg:mb-12 text-ceter font-inter text-ticket-gray-1 text-lg font-normal lg:max-w-[736px] mx-auto">
                         Yes,
                         you
                         can run unit tests
@@ -135,7 +172,7 @@
                         app. The integrated testing features allow for a streamlined.</p>
                 </div>
 
-                <!-- ✅buy-ticket-section: destination & single ticket price -->
+                <!-- buy-ticket-section: destination & single ticket price -->
                 <div class="bg-white flex lg:flex-row lg:rounded-2xl mb-6">
                     <!-- left part -->
                     <div class="flex flex-col justify-between lg:p-8 w-[70%]">
@@ -145,7 +182,7 @@
                                 <img class="h-12" src="./images/bus-logo.png" alt="">
                                 <div class="flex flex-col items-start">
                                     <h3 class="font-bold text-4xl">Greenline Paribahan</h3>
-                                    <p class="font-inter text-ticket-coupon-gray text-lg font-normal lg:max-w-[736px]">
+                                    <p class="font-inter text-ticket-gray-1 text-lg font-normal lg:max-w-[736px]">
                                         Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
@@ -183,22 +220,16 @@
                     <div class=" lg:p-8 w-[20%] flex flex-col justify-center items-center">
                         <img class="w-12 h-12" src="./images/fare.png" alt="">
                         <h3 class="text-ticket-coupon-black font-bold text-3xl">550 Taka</h3>
-                        <p class="text-ticket-coupon-gray font-medium text-xl">Per Seat</p>
+                        <p class="text-ticket-gray-1 font-medium text-xl">Per Seat</p>
                     </div>
                 </div>
 
-
-
-
-
-
-
                 <!-- buy-ticket-section: select seat(s) and total price -->
-                <div class="bg-white flex lg:flex-row lg:rounded-2xl h-[1056px]">
-                    <!-- ✅select-seats:⬅️left section -->
+                <div class="bg-white flex lg:flex-row lg:rounded-2xl">
+                    <!-- select-seats:⬅left section -->
                     <div class="w-2/3 p-8">
                         <div class="mb-6">
-                            <h4 class="text-2xl font-semibold text-left">Select Your Seat</h4>
+                            <h4 class="text-ticket-black text-2xl font-semibold text-left">Select Your Seat</h4>
                         </div>
                         <!-- available      selected -->
                         <div class="border-y-2 border-dashed py-4 mb-6 flex justify-between items-center">
@@ -225,13 +256,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="a1">A1</button>
-                                        <button id="a2">A2</button>
+                                        <button class="hover:bg-gray-200" id="a1">A1</button>
+                                        <button class="hover:bg-gray-200" id="a2">A2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="a3">A3</button>
-                                        <button id="a4">A4</button>
+                                        <button class="hover:bg-gray-200" id="a3">A3</button>
+                                        <button class="hover:bg-gray-200" id="a4">A4</button>
                                     </div>
                                 </div>
                             </div>
@@ -241,13 +272,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="b1">B1</button>
-                                        <button id="b2">B2</button>
+                                        <button class="hover:bg-gray-200" id="b1">B1</button>
+                                        <button class="hover:bg-gray-200" id="b2">B2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="b3">B3</button>
-                                        <button id="b4">B4</button>
+                                        <button class="hover:bg-gray-200" id="b3">B3</button>
+                                        <button class="hover:bg-gray-200" id="b4">B4</button>
                                     </div>
                                 </div>
                             </div>
@@ -257,13 +288,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="c1">C1</button>
-                                        <button id="c2">C2</button>
+                                        <button class="hover:bg-gray-200" id="c1">C1</button>
+                                        <button class="hover:bg-gray-200" id="c2">C2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="c3">C3</button>
-                                        <button id="c4">C4</button>
+                                        <button class="hover:bg-gray-200" id="c3">C3</button>
+                                        <button class="hover:bg-gray-200" id="c4">C4</button>
                                     </div>
                                 </div>
                             </div>
@@ -273,13 +304,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="d1">D1</button>
-                                        <button id="d2">D2</button>
+                                        <button class="hover:bg-gray-200" id="d1">D1</button>
+                                        <button class="hover:bg-gray-200" id="d2">D2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="d3">D3</button>
-                                        <button id="d4">D4</button>
+                                        <button class="hover:bg-gray-200" id="d3">D3</button>
+                                        <button class="hover:bg-gray-200" id="d4">D4</button>
                                     </div>
                                 </div>
                             </div>
@@ -289,13 +320,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="e1">E1</button>
-                                        <button id="e2">E2</button>
+                                        <button class="hover:bg-gray-200" id="e1">E1</button>
+                                        <button class="hover:bg-gray-200" id="e2">E2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="e3">E3</button>
-                                        <button id="e4">E4</button>
+                                        <button class="hover:bg-gray-200" id="e3">E3</button>
+                                        <button class="hover:bg-gray-200" id="e4">E4</button>
                                     </div>
                                 </div>
                             </div>
@@ -305,13 +336,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="f1">F1</button>
-                                        <button id="f2">F2</button>
+                                        <button class="hover:bg-gray-200" id="f1">F1</button>
+                                        <button class="hover:bg-gray-200" id="f2">F2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="f3">F3</button>
-                                        <button id="f4">F4</button>
+                                        <button class="hover:bg-gray-200" id="f3">F3</button>
+                                        <button class="hover:bg-gray-200" id="f4">F4</button>
                                     </div>
                                 </div>
                             </div>
@@ -321,13 +352,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="g1">G1</button>
-                                        <button id="g2">G2</button>
+                                        <button class="hover:bg-gray-200" id="g1">G1</button>
+                                        <button class="hover:bg-gray-200" id="g2">G2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="g3">G3</button>
-                                        <button id="g4">G4</button>
+                                        <button class="hover:bg-gray-200" id="g3">G3</button>
+                                        <button class="hover:bg-gray-200" id="g4">G4</button>
                                     </div>
                                 </div>
                             </div>
@@ -337,13 +368,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="h1">H1</button>
-                                        <button id="h2">H2</button>
+                                        <button class="hover:bg-gray-200" id="h1">H1</button>
+                                        <button class="hover:bg-gray-200" id="h2">H2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="h3">H3</button>
-                                        <button id="h4">H4</button>
+                                        <button class="hover:bg-gray-200" id="h3">H3</button>
+                                        <button class="hover:bg-gray-200" id="h4">H4</button>
                                     </div>
                                 </div>
                             </div>
@@ -353,13 +384,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="i1">I1</button>
-                                        <button id="i2">I2</button>
+                                        <button class="hover:bg-gray-200" id="i1">I1</button>
+                                        <button class="hover:bg-gray-200" id="i2">I2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="i3">I3</button>
-                                        <button id="i4">I4</button>
+                                        <button class="hover:bg-gray-200" id="i3">I3</button>
+                                        <button class="hover:bg-gray-200" id="i4">I4</button>
                                     </div>
                                 </div>
                             </div>
@@ -369,13 +400,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="j1">J1</button>
-                                        <button id="j2">J2</button>
+                                        <button class="hover:bg-gray-200" id="j1">J1</button>
+                                        <button class="hover:bg-gray-200" id="j2">J2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button id="j3">J3</button>
-                                        <button id="j4">J4</button>
+                                        <button class="hover:bg-gray-200" id="j3">J3</button>
+                                        <button class="hover:bg-gray-200" id="j4">J4</button>
                                     </div>
                                 </div>
                             </div>
@@ -385,11 +416,71 @@
                     <!-- select-seats:divider -->
                     <div></div>
 
-                    <!-- 👷⚒️select-seats:➡️right section -->
+                    <!-- select-seats:right section -->
                     <div class="w-1/3 p-8">
-                        <div class="pb-6 border-b-2 border-dashed">
-                            <h4 class="text-2xl font-semibold text-left">Select Your Seat</h4>
+                        <div class="pb-6 border-b-2 border-dashed mb-6">
+                            <h4 class="text-ticket-black text-2xl font-semibold text-left">Select Your Seat</h4>
                         </div>
+                        <div class="font-inter">
+                            <!-- calculation total tickets and prices -->
+                            <div class="p-8 bg-ticket-gray rounded-xl">
+                                <div id="selected-seat-container" class="*:flex *:justify-between">
+                                    <div class="text-ticket-black font-medium pb-4 border-b-2 border-dashed">
+                                        <div class="flex">
+                                            <span>Seat &nbsp;</span>
+                                            <div
+                                                class="flex justify-center items-center bg-ticket-primary text-sm text-white px-1 rounded-full">
+                                                0</div>
+                                        </div>
+                                        <div>Class</div>
+                                        <div>Price</div>
+                                    </div>
+                                </div>
+                                <div class="text-ticket-black font-medium flex justify-between">
+                                    <div>Total Price</div>
+                                    <div>BDT <span id="total-price">0</span></div>
+                                </div>
+                                <div class="flex mt-4 mb-6 rounded-2xl w-full">
+                                    <input type="text" class="p-3 w-3/5" placeholder="Have any coupon?" />
+                                    <button
+                                        class="w-2/5 px-3 flex justify-center items-center rounded text-white font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">
+                                        Apply</button>
+                                </div>
+                                <div class="text-ticket-black font-medium flex justify-between">
+                                    <div>Grand Total</div>
+                                    <div>BDT <span id="grand-total">0</span></div>
+                                </div>
+                            </div>
+
+                            <!-- passenger name -->
+                            <div class="mt-6">
+                                <div class="mb-4 text-ticket-black text-lg font-semibold">Passenger Name*</div>
+                                <input type="text" class="p-4 w-full border-2 rounded-xl"
+                                    placeholder="Enter your name" />
+                            </div>
+                            <!-- Phone Number -->
+                            <div class="mt-6">
+                                <div class="mb-4 text-ticket-black text-lg font-semibold">Phone Number*</div>
+                                <input type="text" class="p-4 w-full border-2 rounded-xl"
+                                    placeholder="Enter your phone number" />
+                            </div>
+                            <!-- Email ID -->
+                            <div class="my-6 ">
+                                <div class="mb-4 text-ticket-black text-lg font-semibold">Email ID</div>
+                                <input type="text" class="p-4 w-full border-2 rounded-xl"
+                                    placeholder="Enter your email id" />
+                            </div>
+
+                            <button
+                                class="w-full mb-6 py-5 flex justify-center items-center rounded-2xl text-white font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">
+                                Next</button>
+
+                            <div class="flex justify-between text-ticket-gray-1">
+                                <span>Terms and Conditions</span>
+                                <span>Cancellation Policy</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
