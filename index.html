@@ -196,11 +196,11 @@
 
                         <!-- 2nd part: destination, boarding, dropping, duration -->
                         <div class="flex flex-col justify-around p-8 rounded-2xl bg-ticket-gray h-64">
-                            <div class="flex justify-between">
+                            <div class="flex justify-between border-b-2 border-dashed">
                                 <span>Route</span>
                                 <span class="font-semibold text-lg">Dhaka - Sylhet</span>
                             </div>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between border-b-2 border-dashed">
                                 <span>Departure Time</span>
                                 <span class="font-semibold text-lg">9:00 PM</span>
                             </div>
@@ -225,9 +225,9 @@
                 </div>
 
                 <!-- buy-ticket-section: select seat(s) and total price -->
-                <div class="bg-white flex lg:flex-row lg:rounded-2xl">
-                    <!-- select-seats:⬅left section -->
-                    <div class="w-2/3 p-8">
+                <div class="bg-white flex lg:flex-row lg:rounded-2xl p-8">
+                    <!-- select-seats:left section -->
+                    <div class="w-2/3 pr-8 border-r-2 border-dashed">
                         <div class="mb-6">
                             <h4 class="text-ticket-black text-2xl font-semibold text-left">Select Your Seat</h4>
                         </div>
@@ -413,11 +413,8 @@
                         </div>
                     </div>
 
-                    <!-- select-seats:divider -->
-                    <div></div>
-
                     <!-- select-seats:right section -->
-                    <div class="w-1/3 p-8">
+                    <div class="w-1/3 pl-8">
                         <div class="pb-6 border-b-2 border-dashed mb-6">
                             <h4 class="text-ticket-black text-2xl font-semibold text-left">Select Your Seat</h4>
                         </div>
@@ -475,7 +472,7 @@
                                 class="w-full mb-6 py-5 flex justify-center items-center rounded-2xl text-white font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">
                                 Next</button>
 
-                            <div class="flex justify-between text-ticket-gray-1">
+                            <div class="flex justify-between text-ticket-gray-1 *:underline">
                                 <span>Terms and Conditions</span>
                                 <span>Cancellation Policy</span>
                             </div>
