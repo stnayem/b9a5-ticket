@@ -106,9 +106,9 @@
                     <p class="font-inter text-lg font-normal text-gray-100 mb-5">Yes, you can run unit tests and view
                         the results directly within the
                         app. The integrated testing features allow for a streamlined.</p>
-                    <button
+                    <a href="#buy-ticket"
                         class="py-5 px-7 rounded-xl text-black font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">Buy
-                        Tickets</button>
+                        Tickets</a>
                 </div>
             </div>
         </section>
@@ -157,7 +157,8 @@
         </section>
 
         <!-- buy ticket section -->
-        <section class="bg-ticket-gray border-2 border-t-green-400 border-r-0 border-b-0 border-l-0 rounded-t-[88px]">
+        <section id="buy-ticket"
+            class="bg-ticket-gray border-2 border-t-green-400 border-r-0 border-b-0 border-l-0 rounded-t-[88px]">
             <div class="lg:max-w-[1170px] mx-auto lg:py-28">
                 <!-- buy-ticket-section: title -->
                 <div class="text-center">
@@ -478,9 +479,27 @@
                                     placeholder="Enter your email id" />
                             </div>
 
-                            <button
-                                class="w-full mb-6 py-5 flex justify-center items-center rounded-2xl text-white font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">
-                                Next</button>
+                            <label for="my_modal_6" id="next-btn"
+                                class="btn-close w-full mb-6 py-5 flex justify-center items-center rounded-2xl text-white font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">
+                                Next</label>
+                            <!-- <input type="button" id="my_modal_6"> -->
+                            <!-- modal start-->
+                            <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                            <div class="modal" role="dialog">
+                                <div class="modal-box flex flex-col items-center">
+                                    <img src="./images/success.png" alt="">
+                                    <h3 class="text-ticket-primary-1 font-bold text-lg">SUCCESS</h3>
+                                    <p class="font-bold py-4 text-center">Thank you for Booking Our Bus Seats.
+                                        We are working hard to find the best service and deals for you.</p>
+                                    <p class="py-4 text-center">Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action">
+                                        <label for="my_modal_6" id="continue-btn"
+                                            class="btn-close w-80 mb-6 py-5 flex justify-center items-center rounded-full text-white font-bold  bg-ticket-primary-1 hover:bg-ticket-primary-1 hover:shadow-lg">
+                                            Continue</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal end-->
 
                             <div class="flex justify-between text-ticket-gray-1 *:underline">
                                 <span>Terms and Conditions</span>
@@ -527,7 +546,6 @@
     </footer>
     <script src="script.js"></script>
     <script>
-
     </script>
 </body>
 

@@ -5,6 +5,9 @@ let seatsName = [];
 const selectedSeatsContainer = document.getElementById('selected-seat-container');
 const totalSelectedSeatsId = document.getElementById('total-selected-seats');
 
+// disabled 'next' button
+const nextButton = document.getElementById('next-btn');
+nextButton.setAttribute('disabled', true);
 
 let grandTotal = 0;
 const grandTotalId = document.getElementById('grand-total');
@@ -45,6 +48,8 @@ for (let i = 0; i < seats.length; i++) {
                     </div>
                     `;
                     selectedSeatsContainer.appendChild(div);
+                    // enabled 'next' button
+                    // nextButton.removeAttribute('disabled');
 
                 } else {
                     alert("Maximum number of seat can be selected are: 4.");
@@ -68,6 +73,7 @@ for (let i = 0; i < seats.length; i++) {
             totalSelectedSeatsId.innerText = seatsSelected;
             document.getElementById('available-seat').innerText = (totalSeats - seatsSelected);
             totalPriceId.innerText = totalPrice;
+            grandTotal = totalPrice;
             grandTotalId.innerText = totalPrice;
         } else {
             alert('Ticket price already discount. Please, reload our webpage again.');
@@ -101,4 +107,16 @@ discountBtn.addEventListener('click', function () {
         grandTotalId.innerText = grandTotal;
         couponSec.style.display = 'none';
     }
-})
+});
+
+
+nextButton.addEventListener('click', function () {
+    if (grandTotal == 0) {
+        alert('please select a seat first');
+    }
+});
+
+const continueBtn = document.getElementById('continue-btn');
+continueBtn.addEventListener('click', function () {
+    window.location.reload();
+});
