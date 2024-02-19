@@ -16,7 +16,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'ticket-primary': 'rgb(29, 209, 0);',
+                        'ticket-primary': 'rgb(29, 209, 0)',
                         'ticket-primary-1': 'rgb(39, 174, 96)',
                         'ticket-gray': 'rgb(247, 248, 248)',
                         'ticket-gray-1': 'rgba(3, 7, 18, 0.5)',
@@ -176,7 +176,7 @@
                 <div class="bg-white flex lg:flex-row lg:rounded-2xl mb-6">
                     <!-- left part -->
                     <div class="flex flex-col justify-between lg:p-8 w-[70%]">
-                        <!-- 1st part: bas name and available seats -->
+                        <!-- 1st part: bus name and available seats -->
                         <div class="flex justify-between">
                             <div class="flex items-center space-x-3">
                                 <img class="h-12" src="./images/bus-logo.png" alt="">
@@ -243,7 +243,7 @@
                             </div>
                         </div>
                         <!-- seats -->
-                        <div class="font-inter text-ticket-gray-1 *:mb-6">
+                        <div id="seats-id" class="font-inter text-ticket-gray-1 *:mb-6">
                             <div
                                 class="flex justify-end *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
                                 <div>
@@ -256,13 +256,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="a1">A1</button>
-                                        <button class="hover:bg-gray-200" id="a2">A2</button>
+                                        <button class="hover:bg-gray-200 seat" id="a1">A1</button>
+                                        <button class="hover:bg-gray-200 seat" id="a2">A2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="a3">A3</button>
-                                        <button class="hover:bg-gray-200" id="a4">A4</button>
+                                        <button class="hover:bg-gray-200 seat" id="a3">A3</button>
+                                        <button class="hover:bg-gray-200 seat" id="a4">A4</button>
                                     </div>
                                 </div>
                             </div>
@@ -272,13 +272,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="b1">B1</button>
-                                        <button class="hover:bg-gray-200" id="b2">B2</button>
+                                        <button class="hover:bg-gray-200 seat" id="b1">B1</button>
+                                        <button class="hover:bg-gray-200 seat" id="b2">B2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="b3">B3</button>
-                                        <button class="hover:bg-gray-200" id="b4">B4</button>
+                                        <button class="hover:bg-gray-200 seat" id="b3">B3</button>
+                                        <button class="hover:bg-gray-200 seat" id="b4">B4</button>
                                     </div>
                                 </div>
                             </div>
@@ -288,13 +288,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="c1">C1</button>
-                                        <button class="hover:bg-gray-200" id="c2">C2</button>
+                                        <button class="hover:bg-gray-200 seat" id="c1">C1</button>
+                                        <button class="hover:bg-gray-200 seat" id="c2">C2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="c3">C3</button>
-                                        <button class="hover:bg-gray-200" id="c4">C4</button>
+                                        <button class="hover:bg-gray-200 seat" id="c3">C3</button>
+                                        <button class="hover:bg-gray-200 seat" id="c4">C4</button>
                                     </div>
                                 </div>
                             </div>
@@ -304,13 +304,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="d1">D1</button>
-                                        <button class="hover:bg-gray-200" id="d2">D2</button>
+                                        <button class="hover:bg-gray-200 seat" id="d1">D1</button>
+                                        <button class="hover:bg-gray-200 seat" id="d2">D2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="d3">D3</button>
-                                        <button class="hover:bg-gray-200" id="d4">D4</button>
+                                        <button class="hover:bg-gray-200 seat" id="d3">D3</button>
+                                        <button class="hover:bg-gray-200 seat" id="d4">D4</button>
                                     </div>
                                 </div>
                             </div>
@@ -320,13 +320,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="e1">E1</button>
-                                        <button class="hover:bg-gray-200" id="e2">E2</button>
+                                        <button class="hover:bg-gray-200 seat" id="e1">E1</button>
+                                        <button class="hover:bg-gray-200 seat" id="e2">E2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="e3">E3</button>
-                                        <button class="hover:bg-gray-200" id="e4">E4</button>
+                                        <button class="hover:bg-gray-200 seat" id="e3">E3</button>
+                                        <button class="hover:bg-gray-200 seat" id="e4">E4</button>
                                     </div>
                                 </div>
                             </div>
@@ -336,13 +336,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="f1">F1</button>
-                                        <button class="hover:bg-gray-200" id="f2">F2</button>
+                                        <button class="hover:bg-gray-200 seat" id="f1">F1</button>
+                                        <button class="hover:bg-gray-200 seat" id="f2">F2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="f3">F3</button>
-                                        <button class="hover:bg-gray-200" id="f4">F4</button>
+                                        <button class="hover:bg-gray-200 seat" id="f3">F3</button>
+                                        <button class="hover:bg-gray-200 seat" id="f4">F4</button>
                                     </div>
                                 </div>
                             </div>
@@ -352,13 +352,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="g1">G1</button>
-                                        <button class="hover:bg-gray-200" id="g2">G2</button>
+                                        <button class="hover:bg-gray-200 seat" id="g1">G1</button>
+                                        <button class="hover:bg-gray-200 seat" id="g2">G2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="g3">G3</button>
-                                        <button class="hover:bg-gray-200" id="g4">G4</button>
+                                        <button class="hover:bg-gray-200 seat" id="g3">G3</button>
+                                        <button class="hover:bg-gray-200 seat" id="g4">G4</button>
                                     </div>
                                 </div>
                             </div>
@@ -368,13 +368,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="h1">H1</button>
-                                        <button class="hover:bg-gray-200" id="h2">H2</button>
+                                        <button class="hover:bg-gray-200 seat" id="h1">H1</button>
+                                        <button class="hover:bg-gray-200 seat" id="h2">H2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="h3">H3</button>
-                                        <button class="hover:bg-gray-200" id="h4">H4</button>
+                                        <button class="hover:bg-gray-200 seat" id="h3">H3</button>
+                                        <button class="hover:bg-gray-200 seat" id="h4">H4</button>
                                     </div>
                                 </div>
                             </div>
@@ -384,13 +384,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="i1">I1</button>
-                                        <button class="hover:bg-gray-200" id="i2">I2</button>
+                                        <button class="hover:bg-gray-200 seat" id="i1">I1</button>
+                                        <button class="hover:bg-gray-200 seat" id="i2">I2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="i3">I3</button>
-                                        <button class="hover:bg-gray-200" id="i4">I4</button>
+                                        <button class="hover:bg-gray-200 seat" id="i3">I3</button>
+                                        <button class="hover:bg-gray-200 seat" id="i4">I4</button>
                                     </div>
                                 </div>
                             </div>
@@ -400,13 +400,13 @@
                                 <div class="flex-1 flex justify-between">
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="j1">J1</button>
-                                        <button class="hover:bg-gray-200" id="j2">J2</button>
+                                        <button class="hover:bg-gray-200 seat" id="j1">J1</button>
+                                        <button class="hover:bg-gray-200 seat" id="j2">J2</button>
                                     </div>
                                     <div
                                         class="flex *:ml-6 *:flex *:justify-center *:items-center *:w-28 *:h-14 *:bg-ticket-gray *:rounded-lg">
-                                        <button class="hover:bg-gray-200" id="j3">J3</button>
-                                        <button class="hover:bg-gray-200" id="j4">J4</button>
+                                        <button class="hover:bg-gray-200 seat" id="j3">J3</button>
+                                        <button class="hover:bg-gray-200 seat" id="j4">J4</button>
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +425,7 @@
                                     <div class="text-ticket-black font-medium pb-4 border-b-2 border-dashed">
                                         <div class="flex">
                                             <span>Seat &nbsp;</span>
-                                            <div
+                                            <div id="total-selected-seats"
                                                 class="flex justify-center items-center bg-ticket-primary text-sm text-white px-1 rounded-full">
                                                 0</div>
                                         </div>
@@ -515,6 +515,7 @@
 
         </div>
     </footer>
+    <script src="script.js"></script>
     <script>
 
     </script>
