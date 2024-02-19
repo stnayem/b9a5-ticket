@@ -436,13 +436,20 @@
                                     <div id="selected-seat-container">
                                     </div>
                                 </div>
-                                <div class="text-ticket-black font-medium flex justify-between">
+                                <div class="border-t-2 text-ticket-black font-medium flex justify-between">
                                     <div>Total Price</div>
                                     <div>BDT <span id="total-price">0</span></div>
                                 </div>
-                                <div class="flex mt-4 mb-6 rounded-2xl w-full">
-                                    <input type="text" class="p-3 w-3/5" placeholder="Have any coupon?" />
-                                    <button
+
+                                <div class="text-ticket-black font-medium flex justify-between">
+                                    <div>Discount </div>
+                                    <div>BDT <span id="total-discount">0</span></div>
+                                </div>
+
+                                <div id="coupon-section" class="flex mt-4 mb-6 rounded-2xl w-full">
+                                    <input id="discount-input" type="text" class="p-3 w-3/5"
+                                        placeholder="Have any coupon?" />
+                                    <button id="discount-btn"
                                         class="w-2/5 px-3 flex justify-center items-center rounded text-white font-bold  bg-ticket-primary hover:bg-ticket-primary-1 hover:shadow-lg">
                                         Apply</button>
                                 </div>
