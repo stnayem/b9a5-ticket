@@ -100,6 +100,8 @@ discountBtn.addEventListener('click', function () {
     } else if (inputData === 'Couple 20') {
         discountAmount = totalPrice * 0.20;
         isDiscounted = true;
+    } else {
+        alert('Please, input a valid coupon.')
     }
     if (isDiscounted) {
         grandTotal = totalPrice - discountAmount;
